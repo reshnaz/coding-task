@@ -1,27 +1,20 @@
-# AppinioReshmaCodingTask
+Requirements and implementation information:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+1. Create a new angular app with the latest angular version
+=> Application created with Angular version 12.
 
-## Development server
+2. The app should have 2 routes/pages.
+=> There are 3 routes: home, statistics and page-not-found.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. First page should display a welcome text
+=> Contains welcome text with button to navigate to Statistics page.
 
-## Code scaffolding
+4. Second page should have an empty list of numbers and an input field (+ button) to add new numbers to the list. Additionally create an statistics box, where the current average, median and standard deviation of the current list is displayed
+=> List accepts upto 5 entries for simplicity. The list can be cleared if needed. Statistical data based on list is displayed.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5. Write unit and e2e tests for this page
+=> Contains basic unit tests with code coverage information.
 
-## Build
+6. Add translations to the app. The main language should be english with the option to change the language to a language of your choice (texts of that language can be dummies)
+=> Used ngx-translate for this feature. Please refer to json files inside assets/i18n folder for translation texts. Translation implemented for English and German languages.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

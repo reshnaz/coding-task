@@ -10,7 +10,6 @@ export class StatisticsComponent implements OnInit {
   
   inputNum: any = null;
   dataSet: Array<number> = [];
-  dataSetList: string = '';
   avg: number = 0;
   median: number = 0;
   stdDev: number = 0;
@@ -20,17 +19,20 @@ export class StatisticsComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  // Method called when Add and Update Statistics button is clicked.
+  // Executes when entry is defined and not 0.
+  // Statistical values displayed are fixed to 3 decimal places. 
   addToDataSet(inputNumber: number) {
     if(inputNumber && inputNumber !== 0) {
       this.dataSet.push(Number(inputNumber));
-      this.dataSetList = this.dataSet.toString();
       this.avg = Number(mean(this.dataSet).toFixed(3));
       this.median = Number(median(this.dataSet).toFixed(3));
       this.stdDev = Number(std(this.dataSet).toFixed(3));
       this.inputNum = '';
     }
   }
-
+  
+  // Method called when Reset Data button is clicked
   resetData() {
     this.dataSet.length = 0;
     this.avg = 0;

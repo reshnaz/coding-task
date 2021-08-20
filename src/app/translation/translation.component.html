@@ -1,6 +1,7 @@
 <div class="row">
     <div class="translate">
         <div class="dropstart">
+            <!-- Icon with language dropdown options -->
             <fa-icon [icon]="faLanguage" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-placement="bottom" [title]="'Translate' | translate"></fa-icon>
             <ul class="dropdown-menu">
                 <li class="dropdown-item" [ngClass]="{'active': localization==currLang}" *ngFor="let localization of translateService.getLangs()"><button class="dropdown-item" type="button" (click)="translateSite(localization)">{{localization | translate}}</button></li>
