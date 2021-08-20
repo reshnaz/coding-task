@@ -1,6 +1,7 @@
 Requirements and implementation information:
 
 1. Create a new angular app with the latest angular version
+
 => Application created with Angular version 12.
 
 2. The app should have 2 routes/pages.
