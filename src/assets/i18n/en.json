@@ -1,0 +1,20 @@
+{
+    "Hello": "Hello there!",
+    "Click": "Click below to go to Statistics Page",
+    "Go": "Go!",
+    "Entry": "New Entry",
+    "Add": "Add and Update Statistics",
+    "Reset": "Reset Data",
+    "Dataset": "DATA SET",
+    "Statistics": "STATISTICS",
+    "Nodata": "No Data",
+    "Average": "Average",
+    "Median": "Median",
+    "Standard Deviation": "Standard Deviation",
+    "Home": "Go to Home Page",
+    "Notfound": "Page Not Found!",
+    "Translate": "Translate this page",
+    "Homett": "Home",
+    "en": "English",
+    "de": "Deutsch"
+}

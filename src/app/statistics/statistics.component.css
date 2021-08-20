@@ -1,0 +1,28 @@
+* {
+    font-family: 'Alata', sans-serif;
+}
+
+.heading {
+    /* border-top: 1px solid #c5c5c5; */
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.results {
+    margin: 50px 20px;
+}
+
+.table {
+    text-align: center;
+}
+
+.data {
+    border-right: 1px solid #c5c5c5;
+}
+
+.no-data {
+    text-align: center;
+}
+
+.data-body {
+    margin: 20px 0;
+}

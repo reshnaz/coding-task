@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <app-translation></app-translation>
+    <div class="row">
+        <div class="col-sm-12">
+            
+            <div class="col-sm-4 offset-sm-4">
+                <div *ngIf="dataSet.length<=4">
+                    <div class="input-group">
+                        <input type="number" (keyup.enter)="addToDataSet(inputNum)" class="form-control" [(ngModel)]="inputNum" [placeholder]="'Entry' | translate">
+                        <button class="btn btn-outline-secondary" type="button" id="button-add" (click)="addToDataSet(inputNum)">{{'Add' | translate}}</button>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="dataSet.length>0">
+                <div class="data-body center-align">
+                    <button class="btn btn-outline-secondary" type="button" (click)="resetData()">{{'Reset' | translate}}</button>
+                </div>
+            </div>
+            
+            <div class="row results">
+                <div class="col-sm-6 data">
+                    <div class="center-align heading">{{'Dataset' | translate}}</div>
+                    <div class="data-body no-data" *ngIf="dataSet.length==0; else numList">{{'Nodata' | translate}}</div>
+                    <ng-template #numList>
+                        <div class="col-sm-4 offset-sm-4">
+                            <table class="data-body table table-striped">
+                                <tbody>
+                                    <tr *ngFor="let num of dataSet">
+                                        <td>{{num}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </ng-template>
+                </div>
+                <div class="col-sm-6">
+                    <div class="center-align heading">{{'Statistics' | translate}}</div>
+                    <div class="data-body col-sm-6 offset-sm-3">
+                        <table style="text-align: left;" class="data-body table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>{{'Average' | translate}}</td>
+                                    <td>{{avg}}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{'Median' | translate}}</td>
+                                    <td>{{median}}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{'Standard Deviation' | translate}}</td>
+                                    <td>{{stdDev}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="center-align">
+            <a data-bs-toggle="tooltip" data-bs-placement="bottom" [title]="'Homett' | translate" routerLink="/home">{{'Home' | translate}}</a>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,20 @@
+{
+    "Hello": "Hallo!",
+    "Click": "Klicken Sie unten, um zur Statistikseite zu gelangen",
+    "Go": "Los geht's!",
+    "Entry": "Neuer Eintrag",
+    "Add": "Statistiken hinzufügen und aktualisieren",
+    "Reset": "Daten zurücksetzen",
+    "Dataset": "DATENSATZ",
+    "Statistics": "STATISTIK",
+    "Nodata": "Keine Daten",
+    "Average": "Durchschnitt",
+    "Median": "Median",
+    "Standard Deviation": "Standardabweichung",
+    "Home": "Zur Hauptseite",
+    "Notfound": "Seite nicht gefunden!",
+    "Translate": "Diese Seite übersetzen",
+    "Homett": "Startseite",
+    "en": "English",
+    "de": "Deutsch"
+}
